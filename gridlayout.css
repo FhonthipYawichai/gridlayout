@@ -1,0 +1,200 @@
+/*setup all area*/
+html,body, .grid-container{
+    height: 100%;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(227, 210, 250);
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto ;
+    gap : 0px ;
+    grid-template-areas:
+    "header header header header"
+    "menubar menubar menubar menubar"
+    "left left right right" 
+    "footer footer footer footer"
+    "footer info doc company";
+ 
+}
+
+/*setup for header class*/
+.header{
+    grid-area: header;
+    display: grid; 
+    grid-template-columns:15% 70% 15% ;
+    gap :0px 0px;
+    grid-template-areas: 
+    "logo title member"; 
+    color: gray;
+    background-color: rgb(227, 210, 250);
+   
+    }
+
+.logo{
+    grid-area: logo ;
+    padding: 50px;   /*area between border and Item*/
+    float: right;
+
+}
+
+.title{
+    grid-area: title ;
+    padding: 20px;
+    text-align: center;
+    color: rgb(70, 51, 71); /*color of text*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+    font-size: 30px;
+}
+
+.member{
+    grid-area: member ;
+    padding: 50px ;
+    float: left;
+    margin: 0px;
+    color: rgb(80, 28, 80);
+}
+
+.menubar{
+    grid-area: menubar;
+    background-color: rgb(201, 178, 216);
+    grid-template-areas: 
+    "FLIGHT CARRENTEL HOTELS TOURS";
+    grid-template-columns:25% 25% 25% 25%;
+    
+}
+
+.d-flex{
+    display: flex;
+    font-size: 10px;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-item-center{
+    align-items: center;
+}
+
+.button{
+    border: none; /*ไม่ให้มีเส้นกรอบ*/
+    width: 25%;
+    height: 40px;
+    padding: 12px 25px; 
+    text-align: center;
+    text-decoration-style:solid ;
+    margin: 0px 0px;
+    cursor: pointer; /*เวลาที่เลื่อนเมาส์ไปชี้ให้เป็นPointerลูกศรชี้*/
+    background-color:  rgb(201, 178, 216);
+    opacity: 1; /*กำหนดให้มีปฏิกิริยาเวลาเลื่อนเมาส์ไปชี้  สีจะจางกว่าตอน Hover*/
+    font-size: 15px;
+    color: rgb(80, 28, 80);;
+}
+
+.button:hover{
+    opacity: 1;
+    background-color: rgb(227, 210, 250);
+}
+.content{
+    grid-area: content;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: left left right right ;
+}
+
+h2{
+    color: rgb(80, 28, 80);
+}
+p3{
+    color: gray;
+}
+.left{
+    grid-area: left;
+    padding: 100px;
+    border: 1px solid rgb(230, 228, 228);
+  
+ }
+#img_pro{
+    margin: auto auto;
+}
+.right{
+    grid-area: right;
+    padding: 100px;
+    border: 1px solid rgb(230, 228, 228);
+      
+}
+
+.footer{
+    grid-area: footer;
+    padding: 20px 50px 35px ;
+    height: 200px;
+    background-color: rgb(201, 178, 216);
+    
+}
+p{
+    color: rgb(80, 28, 80);
+}
+.info{
+    grid-area: info;
+    padding: 20px;
+    float: left;
+    width: 33%;
+}
+
+.doc{
+    grid-area: doc;
+    padding: 20px;
+    float: left;
+
+}
+
+.company{
+    grid-area: company;
+    padding: 20px;
+    float: right;
+    width: 20%;
+}
+
+.fa {
+    padding: 10px;
+    /*font-size: 30px;*/
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border: 1px grey;
+    border-radius: 50%;
+    display: inline-block; /*oxox*/
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  
+.fa:hover {
+    opacity: 0.5
+}
+
+.fa-facebook {
+    background:  rgb(164, 182, 162);
+    color: rgb(8, 8, 8);
+}
+
+.fa-instagram {
+    background:  rgb(189, 200, 224);
+    color: rgb(8, 8, 8);
+}
+
+.fa-youtube {
+    background:  rgb(247, 211, 220);
+    color: rgb(8, 8, 8);
+}
+
+
+/*  border: 5px solid red;
+    position: relative;*/
