@@ -117,9 +117,7 @@ p3{
     border: 1px solid rgb(230, 228, 228);
   
  }
-#img_pro{
-    margin: auto auto;
-}
+
 .right{
     grid-area: right;
     padding: 100px;
